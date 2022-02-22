@@ -57,7 +57,7 @@ public class Professor {
 	}
 
 	public void setDepartamentId(Long departmentId) {
-		departmentId = departmentId;
+		this.departmentId = departmentId;
 	}
 
 }

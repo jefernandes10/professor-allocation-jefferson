@@ -14,11 +14,13 @@ public class Professor {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(nullable = false)
 	private Long id;
+	@Column (nullable = false)
 	private String name;
 	@Column(length = 14, unique = true, nullable = false)
 	private String cpf;
-	@Column(name = "departmentId", nullable = false)
+	@Column(nullable = false)
 	private Long departmentId;
 	
 	@ManyToOne(optional = false)

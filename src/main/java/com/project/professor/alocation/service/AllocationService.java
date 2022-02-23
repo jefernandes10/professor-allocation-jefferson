@@ -62,8 +62,11 @@ public class AllocationService {
 		}
 	}
 
-	public void deleteByAll() {
-		allocationRepository.deleteAllInBatch();
-	}
+public void deleteByAll()
+{
+	allocationRepository.deleteAllInBatch();
+}
+
 
 }
+
